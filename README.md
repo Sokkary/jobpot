@@ -39,7 +39,7 @@ Main smart contract is the `JobContract` which resposible for storing job paymen
 
 if you run on Linux or MAC, run `. installation.sh` which will automate the insallation process for most of the steps, otherwise follow the following steps one by one.
 
-Run `npm i angular-cli -g`
+Run `npm i @angular/cli -g`
 Run `npm i` from the root project directory
 
 ### Development server
