@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.getJobs()
-      .then(() => setTimeout(() => this.getJobs(), 3000));
+      .then(() => setTimeout(() => this.getJobs(), 5000));
   }
 
   getJobs() {

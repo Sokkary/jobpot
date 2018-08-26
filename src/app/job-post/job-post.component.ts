@@ -196,7 +196,10 @@ export class JobPostComponent implements OnInit {
         this.alert.success('Job has been posted successfully', 'Job Post Successful');
         this.store.dispatch(new NavigateAction({ url: ['/home'] }));
       })
-      .catch(err => this.jobEth.handleError(err));
+      .catch(err => {
+        this.isLoading = false;
+        this.jobEth.handleError(err);
+      });
   }
 
   onFileAdded(file) {

@@ -16,7 +16,7 @@ export const environment = {
     useTestNet: true,
     network: 'local',
     local: {
-      jobContractAddress: '0x8d961d3bf21e3371880cbbe0b3d089c4088a31ef',
+      jobContractAddress: '0x22ee5da06755048df43cebdcc9fc4c6f60e0f8c2',
     },
     ropsten: {
       jobContractAddress: '',
