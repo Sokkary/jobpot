@@ -1,0 +1,3575 @@
+{
+  "contractName": "JobContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ref",
+          "type": "bytes32"
+        },
+        {
+          "name": "docHash",
+          "type": "string"
+        },
+        {
+          "name": "initialJobpotPrize",
+          "type": "uint256"
+        },
+        {
+          "name": "appFees",
+          "type": "uint256"
+        }
+      ],
+      "name": "createJob",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getJobsCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getJob",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "int8"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506105ea806100206000396000f3006080604052600436106100565763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416636a79e828811461005b578063bf22c457146100c7578063d07e9f9014610188575b600080fd5b60408051602060046024803582810135601f81018590048502860185019096528585526100b595833595369560449491939091019190819084018382808284375094975050843595505050602090920135915061019d9050565b60408051918252519081900360200190f35b3480156100d357600080fd5b506100df600435610351565b604051808760001916600019168152602001806020018660000b60000b8152602001858152602001848152602001838152602001828103825287818151815260200191508051906020019080838360005b83811015610148578181015183820152602001610130565b50505050905090810190601f1680156101755780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b34801561019457600080fd5b506100b56104d4565b6000806101a86104db565b5050600080546001808201835560408051610120810182528381523360208083019182529282018b8152606083018b81526080840188905260a084018b905260c084018b905260e084018a90526101008401889052600280549687018082559852835160099096027f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace810196875592517f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5acf8401805473ffffffffffffffffffffffffffffffffffffffff90921673ffffffffffffffffffffffffffffffffffffffff1990921691909117905590517f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad0830155518051959692959294869490936102f7937f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad1019290910190610526565b50608082015160048201805460ff1916600183600381111561031557fe5b021790555060a0820151600582015560c0820151600682015560e082015160078201556101009091015160089091015550909695505050505050565b6000606060008060008060028781548110151561036a57fe5b90600052602060002090600902016002015460028881548110151561038b57fe5b90600052602060002090600902016003016002898154811015156103ab57fe5b600091825260209091206004600990920201015460ff1660038111156103cd57fe5b600280548b9081106103db57fe5b90600052602060002090600902016005015460028b8154811015156103fc57fe5b90600052602060002090600902016006015460028c81548110151561041d57fe5b600091825260209182902060076009909202010154855460408051601f6002600019610100600187161502019094169390930492830185900485028101850190915281815291928791908301828280156104b85780601f1061048d576101008083540402835291602001916104b8565b820191906000526020600020905b81548152906001019060200180831161049b57829003601f168201915b5050505050945095509550955095509550955091939550919395565b6000545b90565b60408051610120810182526000808252602082018190529181018290526060808201529060808201908152602001600081526020016000815260200160008152602001600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061056757805160ff1916838001178555610594565b82800160010185558215610594579182015b82811115610594578251825591602001919060010190610579565b506105a09291506105a4565b5090565b6104d891905b808211156105a057600081556001016105aa5600a165627a7a72305820bbf08bb215f874b96d7270ccdc0024192ddbc3c0b66060a4a7c0c899a2266a130029",
+  "deployedBytecode": "0x6080604052600436106100565763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416636a79e828811461005b578063bf22c457146100c7578063d07e9f9014610188575b600080fd5b60408051602060046024803582810135601f81018590048502860185019096528585526100b595833595369560449491939091019190819084018382808284375094975050843595505050602090920135915061019d9050565b60408051918252519081900360200190f35b3480156100d357600080fd5b506100df600435610351565b604051808760001916600019168152602001806020018660000b60000b8152602001858152602001848152602001838152602001828103825287818151815260200191508051906020019080838360005b83811015610148578181015183820152602001610130565b50505050905090810190601f1680156101755780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b34801561019457600080fd5b506100b56104d4565b6000806101a86104db565b5050600080546001808201835560408051610120810182528381523360208083019182529282018b8152606083018b81526080840188905260a084018b905260c084018b905260e084018a90526101008401889052600280549687018082559852835160099096027f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace810196875592517f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5acf8401805473ffffffffffffffffffffffffffffffffffffffff90921673ffffffffffffffffffffffffffffffffffffffff1990921691909117905590517f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad0830155518051959692959294869490936102f7937f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad1019290910190610526565b50608082015160048201805460ff1916600183600381111561031557fe5b021790555060a0820151600582015560c0820151600682015560e082015160078201556101009091015160089091015550909695505050505050565b6000606060008060008060028781548110151561036a57fe5b90600052602060002090600902016002015460028881548110151561038b57fe5b90600052602060002090600902016003016002898154811015156103ab57fe5b600091825260209091206004600990920201015460ff1660038111156103cd57fe5b600280548b9081106103db57fe5b90600052602060002090600902016005015460028b8154811015156103fc57fe5b90600052602060002090600902016006015460028c81548110151561041d57fe5b600091825260209182902060076009909202010154855460408051601f6002600019610100600187161502019094169390930492830185900485028101850190915281815291928791908301828280156104b85780601f1061048d576101008083540402835291602001916104b8565b820191906000526020600020905b81548152906001019060200180831161049b57829003601f168201915b5050505050945095509550955095509550955091939550919395565b6000545b90565b60408051610120810182526000808252602082018190529181018290526060808201529060808201908152602001600081526020016000815260200160008152602001600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061056757805160ff1916838001178555610594565b82800160010185558215610594579182015b82811115610594578251825591602001919060010190610579565b506105a09291506105a4565b5090565b6104d891905b808211156105a057600081556001016105aa5600a165627a7a72305820bbf08bb215f874b96d7270ccdc0024192ddbc3c0b66060a4a7c0c899a2266a130029",
+  "sourceMap": "53:1097:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:1097:1;;;;;;;",
+  "deployedSourceMap": "53:1097:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;445:403;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;445:403:1;;-1:-1:-1;;445:403:1;;;-1:-1:-1;;;445:403:1;;;;;;-1:-1:-1;445:403:1;;-1:-1:-1;445:403:1;;;;;;;;;;;;;;;;;929:219;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;929:219:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;929:219:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;852:73;;8:9:-1;5:2;;;30:1;27;20:12;5:2;852:73:1;;;;445:403;555:4;658:7;682:14;;:::i;:::-;-1:-1:-1;;668:5:1;:7;;;;;;;;699:103;;;;;;;;;;;707:10;699:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;809:4;27:10:-1;;23:18;;;45:23;;;809:14:1;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;809:14:1;;;;;;;;;;;;;;;;;;668:7;;699:103;;23:18:-1;;699:103:1;;809:14;;;;;;;;;;;;:::i;:::-;-1:-1:-1;809:14:1;;;;;;;;;-1:-1:-1;;809:14:1;;;;;;;;;;;;;;;-1:-1:-1;809:14:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;841:2:1;;445:403;-1:-1:-1;;;;;;445:403:1:o;929:219::-;974:7;983:6;991:4;997;1003;1009;1030;1035:2;1030:8;;;;;;;;;;;;;;;;;;;;:12;;;1044:4;1049:2;1044:8;;;;;;;;;;;;;;;;;;;;:16;;1067:4;1072:2;1067:8;;;;;;;;;;;;;;;;;;:15;:8;;;;;:15;;;;1062:21;;;;;;;;1085:4;:8;;1090:2;;1085:8;;;;;;;;;;;;;;;;:22;;;1109:4;1114:2;1109:8;;;;;;;;;;;;;;;;;;;;:15;;;1126:4;1131:2;1126:8;;;;;;;;;;;;;;;;;;;:16;:8;;;;;:16;;1021:122;;;;;;;-1:-1:-1;;1021:122:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1126:16;;1021:122;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;929:219;;;;;;;:::o;852:73::-;896:4;915:5;852:73;;:::o;53:1097::-;;;;;;;;;-1:-1:-1;53:1097:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;53:1097:1;;;-1:-1:-1;53:1097:1;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;",
+  "source": "pragma solidity ^0.4.22;\n\n\nimport \"./SafeMath.sol\";\n\ncontract JobContract {\n  using SafeMath for uint;\n\n  enum JobStatus {\n    active,\n    completed,\n    cancelled,\n    inDispute\n  }\n\n  struct Job {\n    uint id;\n    address owner;\n    bytes32 ref;\n    string docHash;\n    JobStatus status;\n    uint initialJobpot;\n    uint jobpot;\n    uint appFees;\n    uint numApps;\n  }\n\n  uint private index;\n  uint internal balance;\n  Job[] internal jobs;\n\n  function createJob(bytes32 ref, string docHash, uint initialJobpotPrize, uint appFees) public payable returns(uint) {\n    // require(initialJobpotPrize > 0 && appFees > 0 && msg.value >= initialJobpotPrize);\n\n    uint id = index++;\n\n    Job memory job = Job(id, msg.sender, ref, docHash, JobStatus.active, initialJobpotPrize, initialJobpotPrize, appFees, 0);\n\n    jobs.push(job);\n    \n    return id;\n  }\n\n  function getJobsCount() public view returns(uint) {\n    return index;\n  }\n\n  function getJob(uint id) public view returns(bytes32, string, int8, uint, uint, uint) {\n    return ( jobs[id].ref, jobs[id].docHash, int8(jobs[id].status), jobs[id].initialJobpot, jobs[id].jobpot, jobs[id].appFees);\n  }\n}\n",
+  "sourcePath": "/Users/user/Workspace/consensys/jobpot/truffle/contracts/JobContract.sol",
+  "ast": {
+    "absolutePath": "/Users/user/Workspace/consensys/jobpot/truffle/contracts/JobContract.sol",
+    "exportedSymbols": {
+      "JobContract": [
+        328
+      ]
+    },
+    "id": 329,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 195,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "/Users/user/Workspace/consensys/jobpot/truffle/contracts/SafeMath.sol",
+        "file": "./SafeMath.sol",
+        "id": 196,
+        "nodeType": "ImportDirective",
+        "scope": 329,
+        "sourceUnit": 756,
+        "src": "27:24:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 328,
+        "linearizedBaseContracts": [
+          328
+        ],
+        "name": "JobContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 199,
+            "libraryName": {
+              "contractScope": null,
+              "id": 197,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 755,
+              "src": "84:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$755",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "78:24:1",
+            "typeName": {
+              "id": 198,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "97:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "canonicalName": "JobContract.JobStatus",
+            "id": 204,
+            "members": [
+              {
+                "id": 200,
+                "name": "active",
+                "nodeType": "EnumValue",
+                "src": "127:6:1"
+              },
+              {
+                "id": 201,
+                "name": "completed",
+                "nodeType": "EnumValue",
+                "src": "139:9:1"
+              },
+              {
+                "id": 202,
+                "name": "cancelled",
+                "nodeType": "EnumValue",
+                "src": "154:9:1"
+              },
+              {
+                "id": 203,
+                "name": "inDispute",
+                "nodeType": "EnumValue",
+                "src": "169:9:1"
+              }
+            ],
+            "name": "JobStatus",
+            "nodeType": "EnumDefinition",
+            "src": "106:76:1"
+          },
+          {
+            "canonicalName": "JobContract.Job",
+            "id": 223,
+            "members": [
+              {
+                "constant": false,
+                "id": 206,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "203:7:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 205,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "203:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 208,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "216:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 207,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "216:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 210,
+                "name": "ref",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "235:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 209,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "235:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 212,
+                "name": "docHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "252:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 211,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "252:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 214,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "272:16:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_JobStatus_$204",
+                  "typeString": "enum JobContract.JobStatus"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 213,
+                  "name": "JobStatus",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 204,
+                  "src": "272:9:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_JobStatus_$204",
+                    "typeString": "enum JobContract.JobStatus"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 216,
+                "name": "initialJobpot",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "294:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 215,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "294:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 218,
+                "name": "jobpot",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "318:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 217,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "318:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 220,
+                "name": "appFees",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "335:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 219,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "335:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 222,
+                "name": "numApps",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "353:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 221,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "353:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Job",
+            "nodeType": "StructDefinition",
+            "scope": 328,
+            "src": "186:184:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 225,
+            "name": "index",
+            "nodeType": "VariableDeclaration",
+            "scope": 328,
+            "src": "374:18:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 224,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "374:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 227,
+            "name": "balance",
+            "nodeType": "VariableDeclaration",
+            "scope": 328,
+            "src": "396:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 226,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "396:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 230,
+            "name": "jobs",
+            "nodeType": "VariableDeclaration",
+            "scope": 328,
+            "src": "421:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+              "typeString": "struct JobContract.Job[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 228,
+                "name": "Job",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 223,
+                "src": "421:3:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Job_$223_storage_ptr",
+                  "typeString": "struct JobContract.Job"
+                }
+              },
+              "id": 229,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "421:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage_ptr",
+                "typeString": "struct JobContract.Job[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 272,
+              "nodeType": "Block",
+              "src": "561:287:1",
+              "statements": [
+                {
+                  "assignments": [
+                    244
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 244,
+                      "name": "id",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 273,
+                      "src": "658:7:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 243,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "658:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 247,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "id": 246,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "668:7:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 245,
+                      "name": "index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 225,
+                      "src": "668:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "658:17:1"
+                },
+                {
+                  "assignments": [
+                    249
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 249,
+                      "name": "job",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 273,
+                      "src": "682:14:1",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Job_$223_memory_ptr",
+                        "typeString": "struct JobContract.Job"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 248,
+                        "name": "Job",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 223,
+                        "src": "682:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Job_$223_storage_ptr",
+                          "typeString": "struct JobContract.Job"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 263,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 251,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 244,
+                        "src": "703:2:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 252,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 770,
+                          "src": "707:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 253,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "707:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 254,
+                        "name": "ref",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 232,
+                        "src": "719:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 255,
+                        "name": "docHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 234,
+                        "src": "724:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 256,
+                          "name": "JobStatus",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 204,
+                          "src": "733:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_JobStatus_$204_$",
+                            "typeString": "type(enum JobContract.JobStatus)"
+                          }
+                        },
+                        "id": 257,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "active",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "733:16:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_JobStatus_$204",
+                          "typeString": "enum JobContract.JobStatus"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 258,
+                        "name": "initialJobpotPrize",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 236,
+                        "src": "751:18:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 259,
+                        "name": "initialJobpotPrize",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 236,
+                        "src": "771:18:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 260,
+                        "name": "appFees",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 238,
+                        "src": "791:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 261,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "800:1:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_enum$_JobStatus_$204",
+                          "typeString": "enum JobContract.JobStatus"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 250,
+                      "name": "Job",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 223,
+                      "src": "699:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Job_$223_storage_ptr_$",
+                        "typeString": "type(struct JobContract.Job storage pointer)"
+                      }
+                    },
+                    "id": 262,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "699:103:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Job_$223_memory",
+                      "typeString": "struct JobContract.Job memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "682:120:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 267,
+                        "name": "job",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 249,
+                        "src": "819:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Job_$223_memory_ptr",
+                          "typeString": "struct JobContract.Job memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Job_$223_memory_ptr",
+                          "typeString": "struct JobContract.Job memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 264,
+                        "name": "jobs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 230,
+                        "src": "809:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                          "typeString": "struct JobContract.Job storage ref[] storage ref"
+                        }
+                      },
+                      "id": 266,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "809:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Job_$223_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct JobContract.Job storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 268,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "809:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 269,
+                  "nodeType": "ExpressionStatement",
+                  "src": "809:14:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 270,
+                    "name": "id",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 244,
+                    "src": "841:2:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 242,
+                  "id": 271,
+                  "nodeType": "Return",
+                  "src": "834:9:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 273,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createJob",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 239,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 232,
+                  "name": "ref",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "464:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 231,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 234,
+                  "name": "docHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "477:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 233,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "477:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 236,
+                  "name": "initialJobpotPrize",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "493:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 235,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "493:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 238,
+                  "name": "appFees",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "518:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 237,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "518:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "463:68:1"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 242,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 241,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "555:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 240,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "555:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "554:6:1"
+            },
+            "scope": 328,
+            "src": "445:403:1",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 280,
+              "nodeType": "Block",
+              "src": "902:23:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 278,
+                    "name": "index",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 225,
+                    "src": "915:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 277,
+                  "id": 279,
+                  "nodeType": "Return",
+                  "src": "908:12:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 281,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getJobsCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 274,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "873:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 277,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 276,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 281,
+                  "src": "896:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 275,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "896:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "895:6:1"
+            },
+            "scope": 328,
+            "src": "852:73:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 326,
+              "nodeType": "Block",
+              "src": "1015:133:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 298,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1030:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 300,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 299,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1035:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1030:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 301,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "ref",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 210,
+                        "src": "1030:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 302,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1044:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 304,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 303,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1049:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1044:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 305,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "docHash",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 212,
+                        "src": "1044:16:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 307,
+                                "name": "jobs",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 230,
+                                "src": "1067:4:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                                  "typeString": "struct JobContract.Job storage ref[] storage ref"
+                                }
+                              },
+                              "id": 309,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 308,
+                                "name": "id",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 283,
+                                "src": "1072:2:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "1067:8:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Job_$223_storage",
+                                "typeString": "struct JobContract.Job storage ref"
+                              }
+                            },
+                            "id": 310,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "status",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 214,
+                            "src": "1067:15:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_JobStatus_$204",
+                              "typeString": "enum JobContract.JobStatus"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_JobStatus_$204",
+                              "typeString": "enum JobContract.JobStatus"
+                            }
+                          ],
+                          "id": 306,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1062:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_int8_$",
+                            "typeString": "type(int8)"
+                          },
+                          "typeName": "int8"
+                        },
+                        "id": 311,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1062:21:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int8",
+                          "typeString": "int8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 312,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1085:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 314,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 313,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1090:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1085:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 315,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "initialJobpot",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 216,
+                        "src": "1085:22:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 316,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1109:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 318,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 317,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1114:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1109:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 319,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "jobpot",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 218,
+                        "src": "1109:15:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 320,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1126:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 322,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 321,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1131:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1126:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 323,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "appFees",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 220,
+                        "src": "1126:16:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 324,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1028:115:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_bytes32_$_t_string_storage_$_t_int8_$_t_uint256_$_t_uint256_$_t_uint256_$",
+                      "typeString": "tuple(bytes32,string storage ref,int8,uint256,uint256,uint256)"
+                    }
+                  },
+                  "functionReturnParameters": 297,
+                  "id": 325,
+                  "nodeType": "Return",
+                  "src": "1021:122:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 327,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getJob",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 284,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 283,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "945:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 282,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "945:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "944:9:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 297,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 286,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "974:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 285,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "974:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 288,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "983:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 287,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "983:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 290,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "991:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  },
+                  "typeName": {
+                    "id": 289,
+                    "name": "int8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "991:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 292,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "997:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 291,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "997:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 294,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "1003:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 293,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1003:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 296,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "1009:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 295,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1009:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "973:41:1"
+            },
+            "scope": 328,
+            "src": "929:219:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 329,
+        "src": "53:1097:1"
+      }
+    ],
+    "src": "0:1151:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/user/Workspace/consensys/jobpot/truffle/contracts/JobContract.sol",
+    "exportedSymbols": {
+      "JobContract": [
+        328
+      ]
+    },
+    "id": 329,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 195,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "/Users/user/Workspace/consensys/jobpot/truffle/contracts/SafeMath.sol",
+        "file": "./SafeMath.sol",
+        "id": 196,
+        "nodeType": "ImportDirective",
+        "scope": 329,
+        "sourceUnit": 756,
+        "src": "27:24:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 328,
+        "linearizedBaseContracts": [
+          328
+        ],
+        "name": "JobContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 199,
+            "libraryName": {
+              "contractScope": null,
+              "id": 197,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 755,
+              "src": "84:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$755",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "78:24:1",
+            "typeName": {
+              "id": 198,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "97:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "canonicalName": "JobContract.JobStatus",
+            "id": 204,
+            "members": [
+              {
+                "id": 200,
+                "name": "active",
+                "nodeType": "EnumValue",
+                "src": "127:6:1"
+              },
+              {
+                "id": 201,
+                "name": "completed",
+                "nodeType": "EnumValue",
+                "src": "139:9:1"
+              },
+              {
+                "id": 202,
+                "name": "cancelled",
+                "nodeType": "EnumValue",
+                "src": "154:9:1"
+              },
+              {
+                "id": 203,
+                "name": "inDispute",
+                "nodeType": "EnumValue",
+                "src": "169:9:1"
+              }
+            ],
+            "name": "JobStatus",
+            "nodeType": "EnumDefinition",
+            "src": "106:76:1"
+          },
+          {
+            "canonicalName": "JobContract.Job",
+            "id": 223,
+            "members": [
+              {
+                "constant": false,
+                "id": 206,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "203:7:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 205,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "203:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 208,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "216:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 207,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "216:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 210,
+                "name": "ref",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "235:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 209,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "235:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 212,
+                "name": "docHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "252:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 211,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "252:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 214,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "272:16:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_JobStatus_$204",
+                  "typeString": "enum JobContract.JobStatus"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 213,
+                  "name": "JobStatus",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 204,
+                  "src": "272:9:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_JobStatus_$204",
+                    "typeString": "enum JobContract.JobStatus"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 216,
+                "name": "initialJobpot",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "294:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 215,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "294:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 218,
+                "name": "jobpot",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "318:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 217,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "318:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 220,
+                "name": "appFees",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "335:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 219,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "335:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 222,
+                "name": "numApps",
+                "nodeType": "VariableDeclaration",
+                "scope": 223,
+                "src": "353:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 221,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "353:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Job",
+            "nodeType": "StructDefinition",
+            "scope": 328,
+            "src": "186:184:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 225,
+            "name": "index",
+            "nodeType": "VariableDeclaration",
+            "scope": 328,
+            "src": "374:18:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 224,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "374:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 227,
+            "name": "balance",
+            "nodeType": "VariableDeclaration",
+            "scope": 328,
+            "src": "396:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 226,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "396:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 230,
+            "name": "jobs",
+            "nodeType": "VariableDeclaration",
+            "scope": 328,
+            "src": "421:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+              "typeString": "struct JobContract.Job[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 228,
+                "name": "Job",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 223,
+                "src": "421:3:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Job_$223_storage_ptr",
+                  "typeString": "struct JobContract.Job"
+                }
+              },
+              "id": 229,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "421:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage_ptr",
+                "typeString": "struct JobContract.Job[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 272,
+              "nodeType": "Block",
+              "src": "561:287:1",
+              "statements": [
+                {
+                  "assignments": [
+                    244
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 244,
+                      "name": "id",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 273,
+                      "src": "658:7:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 243,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "658:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 247,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "id": 246,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "668:7:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 245,
+                      "name": "index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 225,
+                      "src": "668:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "658:17:1"
+                },
+                {
+                  "assignments": [
+                    249
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 249,
+                      "name": "job",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 273,
+                      "src": "682:14:1",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Job_$223_memory_ptr",
+                        "typeString": "struct JobContract.Job"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 248,
+                        "name": "Job",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 223,
+                        "src": "682:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Job_$223_storage_ptr",
+                          "typeString": "struct JobContract.Job"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 263,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 251,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 244,
+                        "src": "703:2:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 252,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 770,
+                          "src": "707:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 253,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "707:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 254,
+                        "name": "ref",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 232,
+                        "src": "719:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 255,
+                        "name": "docHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 234,
+                        "src": "724:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 256,
+                          "name": "JobStatus",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 204,
+                          "src": "733:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_JobStatus_$204_$",
+                            "typeString": "type(enum JobContract.JobStatus)"
+                          }
+                        },
+                        "id": 257,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "active",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "733:16:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_JobStatus_$204",
+                          "typeString": "enum JobContract.JobStatus"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 258,
+                        "name": "initialJobpotPrize",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 236,
+                        "src": "751:18:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 259,
+                        "name": "initialJobpotPrize",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 236,
+                        "src": "771:18:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 260,
+                        "name": "appFees",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 238,
+                        "src": "791:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 261,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "800:1:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_enum$_JobStatus_$204",
+                          "typeString": "enum JobContract.JobStatus"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 250,
+                      "name": "Job",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 223,
+                      "src": "699:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Job_$223_storage_ptr_$",
+                        "typeString": "type(struct JobContract.Job storage pointer)"
+                      }
+                    },
+                    "id": 262,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "699:103:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Job_$223_memory",
+                      "typeString": "struct JobContract.Job memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "682:120:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 267,
+                        "name": "job",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 249,
+                        "src": "819:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Job_$223_memory_ptr",
+                          "typeString": "struct JobContract.Job memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Job_$223_memory_ptr",
+                          "typeString": "struct JobContract.Job memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 264,
+                        "name": "jobs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 230,
+                        "src": "809:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                          "typeString": "struct JobContract.Job storage ref[] storage ref"
+                        }
+                      },
+                      "id": 266,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "809:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Job_$223_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct JobContract.Job storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 268,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "809:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 269,
+                  "nodeType": "ExpressionStatement",
+                  "src": "809:14:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 270,
+                    "name": "id",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 244,
+                    "src": "841:2:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 242,
+                  "id": 271,
+                  "nodeType": "Return",
+                  "src": "834:9:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 273,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createJob",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 239,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 232,
+                  "name": "ref",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "464:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 231,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 234,
+                  "name": "docHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "477:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 233,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "477:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 236,
+                  "name": "initialJobpotPrize",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "493:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 235,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "493:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 238,
+                  "name": "appFees",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "518:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 237,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "518:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "463:68:1"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 242,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 241,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 273,
+                  "src": "555:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 240,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "555:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "554:6:1"
+            },
+            "scope": 328,
+            "src": "445:403:1",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 280,
+              "nodeType": "Block",
+              "src": "902:23:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 278,
+                    "name": "index",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 225,
+                    "src": "915:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 277,
+                  "id": 279,
+                  "nodeType": "Return",
+                  "src": "908:12:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 281,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getJobsCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 274,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "873:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 277,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 276,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 281,
+                  "src": "896:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 275,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "896:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "895:6:1"
+            },
+            "scope": 328,
+            "src": "852:73:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 326,
+              "nodeType": "Block",
+              "src": "1015:133:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 298,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1030:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 300,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 299,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1035:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1030:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 301,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "ref",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 210,
+                        "src": "1030:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 302,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1044:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 304,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 303,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1049:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1044:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 305,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "docHash",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 212,
+                        "src": "1044:16:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 307,
+                                "name": "jobs",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 230,
+                                "src": "1067:4:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                                  "typeString": "struct JobContract.Job storage ref[] storage ref"
+                                }
+                              },
+                              "id": 309,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 308,
+                                "name": "id",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 283,
+                                "src": "1072:2:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "1067:8:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Job_$223_storage",
+                                "typeString": "struct JobContract.Job storage ref"
+                              }
+                            },
+                            "id": 310,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "status",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 214,
+                            "src": "1067:15:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_JobStatus_$204",
+                              "typeString": "enum JobContract.JobStatus"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_JobStatus_$204",
+                              "typeString": "enum JobContract.JobStatus"
+                            }
+                          ],
+                          "id": 306,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1062:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_int8_$",
+                            "typeString": "type(int8)"
+                          },
+                          "typeName": "int8"
+                        },
+                        "id": 311,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1062:21:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int8",
+                          "typeString": "int8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 312,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1085:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 314,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 313,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1090:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1085:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 315,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "initialJobpot",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 216,
+                        "src": "1085:22:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 316,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1109:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 318,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 317,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1114:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1109:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 319,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "jobpot",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 218,
+                        "src": "1109:15:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 320,
+                            "name": "jobs",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 230,
+                            "src": "1126:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Job_$223_storage_$dyn_storage",
+                              "typeString": "struct JobContract.Job storage ref[] storage ref"
+                            }
+                          },
+                          "id": 322,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 321,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 283,
+                            "src": "1131:2:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1126:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Job_$223_storage",
+                            "typeString": "struct JobContract.Job storage ref"
+                          }
+                        },
+                        "id": 323,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "appFees",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 220,
+                        "src": "1126:16:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 324,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1028:115:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_bytes32_$_t_string_storage_$_t_int8_$_t_uint256_$_t_uint256_$_t_uint256_$",
+                      "typeString": "tuple(bytes32,string storage ref,int8,uint256,uint256,uint256)"
+                    }
+                  },
+                  "functionReturnParameters": 297,
+                  "id": 325,
+                  "nodeType": "Return",
+                  "src": "1021:122:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 327,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getJob",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 284,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 283,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "945:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 282,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "945:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "944:9:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 297,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 286,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "974:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 285,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "974:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 288,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "983:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 287,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "983:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 290,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "991:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  },
+                  "typeName": {
+                    "id": 289,
+                    "name": "int8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "991:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 292,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "997:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 291,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "997:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 294,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "1003:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 293,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1003:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 296,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 327,
+                  "src": "1009:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 295,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1009:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "973:41:1"
+            },
+            "scope": 328,
+            "src": "929:219:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 329,
+        "src": "53:1097:1"
+      }
+    ],
+    "src": "0:1151:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "1535208829570": {
+      "events": {},
+      "links": {},
+      "address": "0x2ea67462b89cf0090efed6d6d25bb6d2ce204a2b",
+      "transactionHash": "0xa6f250d5b2a023da7060e974e0cbe72ebedacae7c751443970fc3074be6717a1"
+    },
+    "1535240359073": {
+      "events": {},
+      "links": {},
+      "address": "0xff62f8ded4ee60aa17c8f968d28d13a49beef27c",
+      "transactionHash": "0xc5ceccad3072fac9ceb805b6672ab6b2ffb503384782d43ca46b4272a54c8a30"
+    },
+    "1535249050212": {
+      "events": {},
+      "links": {},
+      "address": "0xd1f780a6d512bfc6a20defd2c9d6ee824f596c86",
+      "transactionHash": "0x72c2d9a2c5a53de7ad117b6b3e9977c58c2fdbd396ac01b19f6b080e4464dd44"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-26T09:59:02.876Z"
+}

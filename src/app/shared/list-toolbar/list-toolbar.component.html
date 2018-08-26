@@ -1,0 +1,15 @@
+<div class="tool-bar">
+
+  <input type="text" class="filter-input" id="filter" aria-describedby="filter" placeholder="Filter">
+
+  <span class="dropdown float-right">
+    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      {{ currentSort.label }}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a *ngFor="let sort of sortTypes" class="dropdown-item" href="#" (click)="sortBy(sort.key)">{{ sort.label }}</a>
+    </div>
+  </span>
+
+</div>

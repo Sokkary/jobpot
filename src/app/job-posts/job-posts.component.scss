@@ -1,0 +1,37 @@
+.company {
+  border-top: 1px solid #ebebeb;
+  padding-top: 10px;
+}
+
+.card {
+  border: 1px solid #ebebeb;
+  padding: 20px 20px 10px 20px;
+  margin-bottom: 25px;
+}
+
+.prize {
+  float: left;
+}
+
+.prize .amount {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.prize .text {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -15px;
+  font-size: 10px;
+}
+
+.view-job {
+  float: right;
+  line-height: 62px;
+  font-size: 16px;
+}
+
+.card-body-min-height {
+  min-height: 50px;
+}

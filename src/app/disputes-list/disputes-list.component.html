@@ -1,0 +1,26 @@
+<div class="row">
+    <div *ngFor="let dispute of disputes" class="col col-sm-2 col-md-4">
+      <div class="card">
+        <!-- <div class="card-header">{{job.title}}</div> -->
+        <h5>{{ dispute.job.ref }}</h5>
+        <p>{{ dispute.job.title }}</p>
+  
+  
+        <div class=" pb-10">
+          <small>Created by
+            <a href="#">{{ dispute.createdBy }}</a> at {{ dispute.createdAt }}</small>
+        </div>
+  
+        <div class="company text-right clearfix">
+          <span class="prize">
+            <div class="text">status:</div>
+            <span class="amount">{{ dispute.status }}</span>
+          </span>
+          <span class="view-job">
+            
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

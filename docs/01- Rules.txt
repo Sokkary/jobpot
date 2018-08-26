@@ -1,0 +1,61 @@
+Jobpot
+--------
+Job pot is a honey pot for any referral who refers a successful CV/Cadidate for a job. 
+Simply, any job owner can list a job and specify an initial job pot value as a prize for successful referral, 
+after that it will be open for individuals and recruiters to submit CVs. However, submitting a CV will require 
+paying the job pot a small fees to make sure that the submitted CV is genuine and eliminate low quality CVs. 
+The fees and initial value all will go into the job pot. The jobpot will keep growing until the job owner selects 
+an applicant as a winner (after singing a contract with the candidate). All jobpot value goes to the winning 
+referral whether a recruiter or individual (may be the applicant himself).
+
+Rules:
+--------
+Cancellation:
+  By Owner:
+  If a job owner wants to canel a job posting then he can do so without any extra fees if no one has contributed to the job pot. Otherwise, a 25% cancellation fees will apply and 
+  all contributers will get refunded their contribution + a percentage from the owner canellation fees as a compensation.
+
+  By Candidate:
+  If a candidate (recruiter or individual) wants to cancel a submission, he can do so but will get back only 75% of the fees and the rest will remain in the jobpot.
+
+Validation:
+  The system will eliminate duplicate candidate submissions by validating the candidate email, first/last name and mobile. However, if there are still duplications, the job owner will decide the winner.
+
+Winner Selection
+  Winner selection:
+    - Job owner is required to select a winner upon signing a contract with a candidate. 
+    - Or an applicant may request the jobpot which will trigger a notification to the owner to approve the request.
+    - Once an owner selects a winner, a prize countdown starts.
+  
+  Duplicate Entries:
+  If same candidate has been introduced by more than one applicant, the job's owner has to select the first one referred the candidate. In all cases, there will be a countdown time for the other applicants to object if they're claiming the prize for good reasons.
+  
+  Prize countdown:
+    - Once an owner select the winner, a 72 hours countdown will start. If no disputes from any party, the prize will be available to the selected applicant.
+    - Otherwise, there will be a dispute and the prize will be locked till a disbute gets resolved
+
+Disputes
+  During the prize countdown period of 72 hours, any applicant has the right to object and claim the prize. However, the dispute process requires that the disputers pay a dispute fees which will pay the judges.
+
+  Judges:
+  Judges can be any one (recruiter, applicant or non-related individuals) and they can join the the judges' pool by staking a minimum amount of tokens, in return higher staked jusdges will get priority to be selected for disputes.
+
+Resolution:
+- Once a dispute occur and disputer paid the fees. The system will pick 5 judges for the case based on their success score (Reputation) and their staked tokens.
+- Each judge needs to read the dispute reasons and go through the case to check the sequence of applicantions and do necessary communication to job owner and selected candidate.
+- If a judge didn't enter his score within 72 hours, his reputation score will get lowered and another judge will be selected from the pool.
+- Each judge will enter a percentage that goes to the disputer in terms of (25%, 50%, 75% or 100%)
+- Shelling points will be discarded (decisions which far away from the rest of choices) and the average of the close decisions will be taken.
+- After getting the 5 decisions, the final decision will trigger a notification with the results to job's owner and disputer.
+- Judges get paid a percentage from the dispute fees. Jusges with shelling pint decisions will not get paid.
+- within 48 hours if no objection received from both parties the decision will be executed automatically and the prize will get distributed based on that decision.
+- In case of objection, a dispute-objection should be raised and the objector should pay the 1.5x of the previouse dispute fees and the cycle repeats with a new set of judges.
+- The resolution steps keeps repeating until no objection and the decision is executed.
+
+
+
+
+
+
+  
+

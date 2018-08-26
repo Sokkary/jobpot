@@ -1,0 +1,13 @@
+Stretching Goals
+----------------
+
+IPFS:
+dApp is relying on the IPFS storage for all job details as (JSON Document) and (Attachments/files) where we store only the ipfs hash in the contract.
+
+Testnet:
+The contracts have been deployed to `rinkeby` and the addresses are:
+  - JobContract Address:  
+
+
+
+

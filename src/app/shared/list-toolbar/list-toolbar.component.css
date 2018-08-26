@@ -1,0 +1,17 @@
+.tool-bar {
+  padding: 0;
+}
+
+.filter-input {
+  outline: none;
+  padding: 1px 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #b5b9bf;
+}
+
+::placeholder {
+  color: #b5b9bf;
+  opacity: 1;
+}

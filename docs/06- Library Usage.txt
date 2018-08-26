@@ -1,0 +1,7 @@
+SafeMath library
+-----------------
+For math operations with safety checks that throw on error. This library will be used within the Jobpot contracts:
+
+Path:
+------
+- Library contract /truffle/contracts/SafeMath.sol

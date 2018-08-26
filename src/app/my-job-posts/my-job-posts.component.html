@@ -1,0 +1,13 @@
+<div class="menu">
+  <div class="clearfix title">
+    <h5 class="float-left">My Job Posts</h5>
+  </div>
+
+  <div class="mb-10">
+    <app-list-toolbar [sortTypes]="sortTypes"></app-list-toolbar>
+  </div>
+
+  <!-- <p *ngIf="!jobs.length" class="text-center mt-20 mb-20">No posts yet!</p> -->
+  
+  <app-job-posts [jobs]="jobs" [isLoading]="isLoading"></app-job-posts>
+</div>

@@ -1,0 +1,28 @@
+Operations
+-----------
+Owner:
+  - AddJob
+  - CancelJob
+  - ModifyJob
+  - SelectWinner
+  - RaiseCounterDispute
+  - CancelCounterDispute
+
+Applicant:
+  - applyForJob
+  - withdrawFromJob
+  - modifyJobSubmission
+  - RaiseDispute
+  - CancelDispute
+
+Judge:
+  - viewDispute
+  - submitDisputeDecision
+
+
+
+
+
+
+  
+

@@ -1,0 +1,24 @@
+<div class="container form-container lg-size">
+
+  <a [routerLink]="['/']" href="#" class="back-link">
+    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+    Back
+  </a>
+
+  <hr>
+
+  <div class="clearfix">
+    <h2 class="float-left">Dashboard</h2>
+    <div class="float-right dashboard-links">
+      <a (click)="setActiveTab('my-job-posts')" href="#">My Job Posts</a> |
+      <a (click)="setActiveTab('my-applied-applications')" href="#">Applied Applications</a> |
+      <a (click)="setActiveTab('my-disputes')" href="#">Disputes</a>
+    </div>
+  </div>
+
+  <div class="menu">
+    <app-my-job-posts *ngIf="tab === 'my-job-posts'"></app-my-job-posts>
+    <app-my-applied-applications *ngIf="tab === 'my-applied-applications'"></app-my-applied-applications>
+    <app-my-disputes *ngIf="tab === 'my-disputes'"></app-my-disputes>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+Security and Common Attacks Used in The Jobpot
+-----------------------------------------------
+
+-----------------------
+Attacks
+-----------------------
+ - TX.Origin
+ Tx origin can be manipulated, thus we avoided using it in our contracts and instead relied on proper use of msg.sender instead.
+
+ - Gas limit 
+ Gas limit attach has been avoided by:
+  - Eliminating the array loops, 
+  - Eliminating recursions ,
+  - Eliminating external function calls, 
+  - Limiting user input data length.
+
+-----------------------
+ Tools & Best practices
+ -----------------------
+ We've used some suitable practices for our case such as:
+	- Circuit breaker design pattern
+	- Catch bugs before release by running:
+		- Automated testing
+	- Keep contract code simple; complexity == more bugs
+	- Only use blockchain when necessary
+    - Blockchain used to manage payments while majority of data storage and retrieval off-loaded to the dApp and IPFS storage.
+	- Avoiding calling external contracts
+	- Sanitize user inputs

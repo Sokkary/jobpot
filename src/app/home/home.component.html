@@ -1,0 +1,15 @@
+<section class="section bg-white py-10" id="section-main">
+  <div class="container">
+
+    <h6 class="alert alert-primary text-center mb-50">
+      It's simple! Just submit/refer a successful candidate for a posted job and win the whhole jobpot, <a href="#">learn more.</a>
+    </h6>
+
+    <div class="mb-10">
+      <app-list-toolbar [sortTypes]="sortTypes"></app-list-toolbar>
+    </div>
+    
+    <app-job-posts [jobs]="jobs" [isLoading]="isLoading"></app-job-posts>
+
+  </div>
+</section>

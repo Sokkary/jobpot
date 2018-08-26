@@ -1,0 +1,33 @@
+<fieldset [disabled]="disabled">
+
+  <div class="drop-container" ngFileDrop [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput">
+    Drag a file here or
+    <label class="upload-button">
+      <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" /> browse
+    </label>
+    to upload.
+  </div>
+
+  <div class="upload-items">
+
+    <div>
+      <h6>{{ currentFile.name }}</h6>
+      <div class="progress" *ngIf="currentFile.progress">
+        <span class="progress-bar" [style.width]="(currentFile.progress * 100 / currentFile.size) + '%'"> {{ currentFile.progress * 100 / currentFile.size | number:'1.0-0' }}% </span>
+      </div>
+    </div>
+
+    <div class="upload-item" *ngFor="let f of files; let i = index;">
+      <span class="filename">
+        <span>{{ f.name }} - {{ f.progress?.data?.percentage }}%</span>
+        <span>uploading with {{ f.progress?.data?.speedHuman }}</span>
+        <span>ETA {{ f.progress?.data?.etaHuman }}</span>
+      </span>
+
+      <div class="progress">
+        <span class="progress-bar" [style.width]="f?.progress?.data?.percentage + '%'"> {{ f.progress?.data?.percentage }}% </span>
+      </div>
+    </div>
+  </div>
+
+</fieldset>

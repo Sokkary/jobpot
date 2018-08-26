@@ -1,0 +1,13 @@
+<div>
+  <div class="clearfix title">
+    <h5 class="float-left">Disputes</h5>
+  </div>
+
+  <div class="mb-10">
+    <app-list-toolbar [sortTypes]="sortTypes"></app-list-toolbar>
+  </div>
+
+  <p *ngIf="disputes.length === 0" class="text-center mt-20 mb-20">Awesome, no disputes!</p>
+
+  <app-disputes-list [disputes]="disputes"></app-disputes-list>
+</div>

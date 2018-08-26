@@ -1,0 +1,11 @@
+<app-header>
+</app-header>
+
+<!-- Main container -->
+<main class="main-content">
+  <app-msg-box *ngFor="let alert of alerts" [msg]="alert" [displayDirection]="'h'" class="animated bounceInDown bounceInUp"></app-msg-box>  
+  <router-outlet></router-outlet>
+</main>
+<!-- END Main container -->
+
+<app-footer></app-footer>

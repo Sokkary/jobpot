@@ -1,0 +1,23 @@
+.drop-container {
+  border: dotted 3px lightgray;
+  text-align: center;
+  padding: 3em;
+  margin: 0.8em 0;
+}
+
+a {
+  text-decoration: underline
+}
+
+.upload-button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #32ccff;
+}
+
+.upload-button input {
+  display: none
+}
+  

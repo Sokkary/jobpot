@@ -1,0 +1,69 @@
+Screens
+-----------
+- Home
+ - Listed jobs, filters, search
+ - Button to post a job
+ - Button to dashboard
+
+- new job post
+  - company name
+  - title
+  - job category
+  - job type (fulltime, parttime, contract)
+  - prize
+  - min-contribution-to-apply
+  - required start date
+  - salary
+  - description  
+  - attachment
+  - Submit/Cancel buttons
+
+- view job post
+  - Company name
+  - Title
+  - Job category
+  - Job type (fulltime, parttime, contract)
+  - Prize
+  - Required start date
+  - Salary
+  - Description  
+  - Attachment  
+  - Apply for job/back buttons - if applicant didn't apply for this job
+  - Withdraw Application - if applicant already applied to the job
+  - Claim Prize - if applicant already applied to the job
+  - Dispute - if applicant already applied to the job and the winner is selected
+
+- apply for job
+  - job id
+  - applicant name
+  - candidate first/last name
+  - candidant email
+  - linkedin link
+  - attachment
+
+- Dashboard
+  - Job Postings
+    - Active
+    - Countdown
+    - Cancelled
+
+  - Applications
+    - Active
+    - Countdown
+    - Closed
+    - Withdrawn
+
+  - Disputes
+    - Active
+    - Closed
+    - Cancelled
+    
+  - Notifications
+    - Ex: You've received a new job submission from applicant ABC
+    - Ex: Job ABC in countdown now and your application is not the winning one
+    - Ex: Congratulations, job ABC in countdown now and your application is the winning one.
+    - Ex: Job ABC has been closed now
+    - Ex: Job ABC has been cancelled and you've been refunded xx amount
+    - Ex: Your dispute xyz for application 123 is resolved 100% in your favor
+    - Ex: Your dispute xyz for application 123 is resolved 50% in your favor
+    - Ex: A counter dispute has been created for the job abc, you need to act now.

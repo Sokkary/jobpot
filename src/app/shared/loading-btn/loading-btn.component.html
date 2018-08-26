@@ -1,0 +1,7 @@
+<button 
+  type="submit" 
+  class="btn btn-primary" 
+  [title]="title"
+  [disabled]="isLoading || disabled"
+  (click)="submit()">
+  <i class="fa fa-circle-o-notch fa-spin fa-fw" *ngIf="isLoading"></i> {{ !isLoading ? label : 'Please, wait while submitting...' }}</button>

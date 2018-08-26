@@ -1,0 +1,14 @@
+Used Design Patterns
+---------------------
+1- Restrict Access
+Access restriction is done through the use of `Ownable` contract to allow cerntain methods to be run only by owner.
+
+2- Circuit Breaker
+An emergency action through the use of `CircuitBreaker` contract can be execued only by the owner (account who deployed the contract) in case of high severity bugs. 
+Circuit breaker switch can be turned ON/Off by the owner.
+
+3- Fail early, fail loud
+All validations like `require` and `assert` statements are executed first with early revert to save gas execution and prevent additional access to unauthorised statements.
+
+4- Mortal 
+Remove contract from blockchain by calling selfdestruct. This action is only available to owner and can be executed in many cases like terminating old versin of the contract or end of use/no business are longer required.

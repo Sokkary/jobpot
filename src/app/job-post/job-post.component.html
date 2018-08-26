@@ -1,0 +1,24 @@
+<div class="form-container md-size">
+  <a [routerLink]="['/']" href="#" class="back-link">
+    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+    Back
+  </a>
+
+  <fieldset>
+    <legend>
+      <h2>New Post</h2>
+    </legend>
+
+    <!-- <app-loader (loading)="isLoading=$event" [label]="'Loading...'"></app-loader> -->
+
+    <form [formGroup]="form" (ngSubmit)="submit(model)">
+      <formly-form [form]="form" [fields]="fields" [model]="model" (submit)="submit()">
+        <app-file-uploader (complete)="onFileAdded($event)" [disabled]="!isValidOwner"></app-file-uploader>
+
+        <div class="text-right">
+          <app-loading-btn [label]="'Post'" [disabled]="!isValidOwner" [title]="'Post'" [isLoading]="isLoading"></app-loading-btn>
+        </div>
+      </formly-form>
+    </form>
+  </fieldset>
+</div>

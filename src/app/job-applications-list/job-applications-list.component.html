@@ -1,0 +1,26 @@
+<div class="row">
+  <div *ngFor="let app of apps" class="col col-sm-2 col-md-4">
+    <div class="card">
+      <!-- <div class="card-header">{{job.title}}</div> -->
+      <h5>{{ app.job.ref }}</h5>
+      <p>{{ app.job.title }}</p>
+
+
+      <div class=" pb-10">
+        <small>Applied by
+          <a href="#">{{ app.company }}</a> at {{ app.createdAt }}</small>
+      </div>
+
+      <div class="company text-right clearfix">
+        <span class="prize">
+          <div class="text">Jobpot:</div>
+          <span class="amount">$1000</span>
+        </span>
+        <span class="view-job">
+          <a [routerLink]="['/job-view']" href="#">View Job</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+  

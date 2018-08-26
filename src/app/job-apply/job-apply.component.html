@@ -1,0 +1,22 @@
+<div class="form-container md-size">
+  <a [routerLink]="['/']" href="#" class="back-link">
+    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+    Back
+  </a>
+
+  <fieldset>
+    <legend><h2>Apply for a job</h2></legend>
+
+    <!-- <app-loader (loading)="isLoading=$event" [label]="'Loading...'"></app-loader> -->
+
+    <div class="alert alert-primary">By applying for this job, you will be required to pay $20 in ETH that goes to the jobpot.</div>
+
+    <form [formGroup]="form" (ngSubmit)="submit(model)">
+      <formly-form [form]="form" [fields]="fields" [model]="model" (submit)="submit()">
+        <div class="text-right">
+          <app-loading-btn [label]="'Apply'" [title]="'Apply'"></app-loading-btn>
+        </div>
+      </formly-form>
+    </form>
+  </fieldset>
+</div>

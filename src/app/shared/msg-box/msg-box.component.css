@@ -1,0 +1,40 @@
+.controls {
+  margin: 10px;
+  text-align: center;
+}
+
+.box-container {
+  /* max-width: 300px; */
+  text-align: center;
+  width: 70%;
+  margin: 10px auto;
+  transition: 0.5s ease-in-out;
+}
+
+.box-container.borders {
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #f1f2f3;
+  background-color: #f8f9fa;
+}
+
+.half-width {
+  width: 48%;
+}
+
+.full-width {
+  width: 96%;
+}
+
+.btn {
+  font-size: 14px;
+}
+
+.close-icon {
+  margin: 10px 20px 0 0;
+  font-weight: 400;
+  font-size: 22px;
+  color: #b5b9bf;
+  float: right;
+  cursor: pointer;
+}

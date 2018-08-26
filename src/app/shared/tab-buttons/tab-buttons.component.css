@@ -1,0 +1,8 @@
+.btn-group {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.btn-group .btn {
+  width: 50%;
+}

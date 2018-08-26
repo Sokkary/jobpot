@@ -1,0 +1,34 @@
+
+<div class="alert alert-info text-center" *ngIf="!jobs.length">
+  No jobs so far!
+</div>
+
+<app-loader [isLoading]="isLoading"></app-loader>
+
+<div class="row">
+  <div *ngFor="let job of jobs" class="col col-sm-2 col-md-4">
+    <div class="card">
+      <!-- <div class="card-header">{{job.title}}</div> -->
+      <h5>{{ job.title }}</h5>
+      <p class="card-body-min-height">{{ job.description }}</p>
+
+      <div class=" pb-10">
+        <small>Posted by
+          <a href="#">{{ job.company }}</a> at {{ job.createdAt }}</small>
+      </div>
+
+      <div class="company text-right clearfix">
+        <span class="prize">
+          <div class="text">Jobpot:</div>
+          <span class="amount">{{ job.ethJob.jobpot || '0' }}</span>
+          <small>ETH</small>
+        </span>
+        <span class="view-job">
+          <a [routerLink]="['/job-view', job.ref]" href="#">View Job</a>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</div>

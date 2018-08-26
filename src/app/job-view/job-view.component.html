@@ -1,0 +1,91 @@
+<div class="container form-container">
+  <a [routerLink]="['/']" href="#" class="back-link">
+    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+    Back
+  </a>
+
+  <app-loader [isLoading]="isLoading" (loading)="isLoading=$event" [label]="'Loading job...'"></app-loader>
+  
+  <fieldset *ngIf="!isLoading">
+
+    <h2 class="mt-20 mb-20">{{ job.title }}</h2>
+
+    <div class="row">
+      <div class="col-12 col-md-8 right-border">
+        <div class="row">
+
+          <div class="col-md-4">
+            <h6>Reference:</h6>
+            <p>{{ job.ref }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Status:</h6>
+            <p [ngClass]="{ 'text-warning': job.ethJob.status === 'countdown', 'text-danger': job.ethJob.status !== 'active', 'text-success': job.ethJob.status === 'active' }">{{ job.ethJob.status }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Company:</h6>
+            <p>{{ job.company }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Category:</h6>
+            <p>{{ job.category }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Type:</h6>
+            <p>{{ job.type }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Min App Fees:</h6>
+            <p>{{ job.appFees }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Start Date#</h6>
+            <p>{{ job.startDate }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Posted At:</h6>
+            <p>{{ job.createdAt }}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h6>Attachment:</h6>
+            <a *ngIf="job.attachment" target="_blank" href="{{ job.attachment }}">Full details</a>
+            <span *ngIf="!job.attachment">N/A</span>
+          </div>
+
+          <div class="col-md-12">
+            <h6>Description</h6>
+            <p [innerHTML]="job.description"></p>
+          </div>
+
+        </div>
+
+        <hr class="d-none">
+      </div>
+
+      <div class="col-4 col-md-4">
+        <div class="summary">
+          <div>Jobpot</div>
+          <div><span class="prize">{{ job.ethJob.jobpot }}</span><small>ETH</small></div>
+          
+          <hr/>
+          <div class="text-center mb-15">
+            <button (click)="soon()" class="btn btn-danger" *ngIf="job.createdBy === user.address">Cancel job</button>
+            <button (click)="soon()" class="btn btn-primary" *ngIf="job.ethJob.status === 'active' && !isUserApplied && job.createdBy !== user.address">Apply for job</button>
+            <button (click)="soon()" class="btn btn-danger" *ngIf="job.ethJob.status === 'active' && isUserApplied">Withdraw from job</button>
+            <button (click)="soon()" class="btn btn-danger" *ngIf="job.ethJob.status === 'countdown' && !isUserWinner">Raise a disbute</button>
+            <button (click)="soon()" class="btn btn-primary" *ngIf="job.ethJob.status === 'active' && isUserApplied">Claim Jobpot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>

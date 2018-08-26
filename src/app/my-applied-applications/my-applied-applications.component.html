@@ -1,0 +1,14 @@
+<div>
+    <div class="clearfix title">
+      <h5 class="float-left">Applied Applications</h5>
+    </div>
+    
+    <div class="mb-10">
+      <app-list-toolbar [sortTypes]="sortTypes"></app-list-toolbar>
+    </div>
+  
+    <p *ngIf="apps.length === 0" class="text-center mt-20 mb-20">You didn't apply to any, yet!</p>
+
+    <app-job-applications-list [apps]="apps"></app-job-applications-list>
+  </div>
+  

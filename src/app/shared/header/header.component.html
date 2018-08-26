@@ -1,0 +1,33 @@
+<!-- Topbar -->
+<nav class="topbar topbar-expand-sm topbar-sticky" id="section-top">
+  <div class="container">
+
+    <div class="topbar-left">
+      <button class="topbar-toggler text-gray">&#9776;</button>
+      <a class="topbar-brand" [routerLink]="['/home']">
+        <img class="logo-default" src="/assets/img/logo.png" height="40" alt="logo">
+      </a>
+    </div>
+
+    <div class="topbar-right">
+      <div>Logged-in Account:</div>
+      <small>{{ user.account || 'N/A' }}</small>
+      <div>
+        <a class="btn btn-primary btn-sm" [routerLink]="['/dashboard']">Dashboard</a>
+        <a class="btn btn-primary btn-sm" [routerLink]="['/job-post']">Post a job</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+<!-- END Topbar -->
+
+<!-- Header -->
+<header class="header fadeout pt-90 pb-0" id="section-home">
+  <div class="container">
+    <div class="text-center">
+      <div class="alert alert-danger" *ngIf="noMetaMaskError">{{ noMetaMaskError }}</div>
+    </div>
+  </div>
+</header>
+<!-- END Header -->

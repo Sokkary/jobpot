@@ -1,0 +1,8 @@
+<div class="btn-group" role="group">
+  <button 
+    *ngFor="let label of selections"
+    type="button"     
+    class="btn"
+    [ngClass]="{ 'btn-primary': selection == label, 'btn-secondary': selection != label }"    
+    (click)="doSelect(label)">{{ label }}</button>
+</div>
