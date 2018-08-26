@@ -10,6 +10,12 @@ The fees and initial value all will go into the job pot. The jobpot will keep gr
 - App is hosted here: http://jobpot.io.s3-website-ap-southeast-2.amazonaws.com/
 - SmartContract (Rinkeby): 0xe30a73f32e11cd554b013b24f98fa97c523a6b3e
 
+Use these sites to get free ETH for Rinkeby network:
+- http://rinkeby-faucet.com/ (0.001) ETH
+- https://faucet.rinkeby.io/ (3.5) ETH
+
+**Note:** Posting jobs will require ETH equals to the Jobpot prize that you specify yourself in the job submission form. Use less jobpot prizes to not consume all Rinkeby free ethers at once.
+
 ## Documents
 
 All conesnsys documentation requirements are located in the folder `/docs` where we've:
