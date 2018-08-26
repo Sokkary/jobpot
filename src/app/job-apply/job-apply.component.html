@@ -11,7 +11,7 @@
 
     <div class="alert alert-primary">By applying for this job, you will be required to pay $20 in ETH that goes to the jobpot.</div>
 
-    <form [formGroup]="form" (ngSubmit)="submit(model)">
+    <form [formGroup]="form" (ngSubmit)="submit()">
       <formly-form [form]="form" [fields]="fields" [model]="model" (submit)="submit()">
         <div class="text-right">
           <app-loading-btn [label]="'Apply'" [title]="'Apply'"></app-loading-btn>

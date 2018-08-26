@@ -16,7 +16,10 @@ export class FileUploaderComponent implements OnInit {
   humanizeBytes: Function;
   dragOver: boolean;
   options: UploaderOptions;
-  currentFile = {};
+  currentFile = {
+    name: '',
+    progress: 0
+  };
 
   constructor(private ipfs: IpfsService) {
     this.options = { concurrency: 1 };

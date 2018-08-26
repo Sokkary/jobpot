@@ -48,18 +48,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "jobpot.com:build"
+            "browserTarget": "jobpot:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "jobpot.com:build:production"
+              "browserTarget": "jobpot:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jobpot.com:build"
+            "browserTarget": "jobpot:build"
           }
         },
         "test": {
@@ -93,7 +93,7 @@
         }
       }
     },
-    "jobpot.com-e2e": {
+    "jobpot-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -102,7 +102,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "jobpot.com:serve"
+            "devServerTarget": "jobpot:serve"
           }
         },
         "lint": {
@@ -119,7 +119,7 @@
       }
     }
   },
-  "defaultProject": "jobpot.com",
+  "defaultProject": "jobpot",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

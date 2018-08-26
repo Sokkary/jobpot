@@ -18,12 +18,6 @@
     </div>
 
     <div class="upload-item" *ngFor="let f of files; let i = index;">
-      <span class="filename">
-        <span>{{ f.name }} - {{ f.progress?.data?.percentage }}%</span>
-        <span>uploading with {{ f.progress?.data?.speedHuman }}</span>
-        <span>ETA {{ f.progress?.data?.etaHuman }}</span>
-      </span>
-
       <div class="progress">
         <span class="progress-bar" [style.width]="f?.progress?.data?.percentage + '%'"> {{ f.progress?.data?.percentage }}% </span>
       </div>

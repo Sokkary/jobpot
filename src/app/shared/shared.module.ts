@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { TabButtonsComponent } from './tab-buttons/tab-buttons.component';
 import { MsgBoxComponent } from './msg-box/msg-box.component';
 import { ListToolbarComponent } from './list-toolbar/list-toolbar.component';

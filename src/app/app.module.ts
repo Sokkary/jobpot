@@ -62,12 +62,7 @@ import { JobEthService } from '@app/services/job-eth.service';
     EffectsModule.forRoot([
       CommonEffects,
     ]),
-    CanpayModule.forRoot({
-      contracts: {
-        useTestNet: environment.contracts.useTestNet,
-        canyaCoinAddress: environment.contracts[environment.contracts.network].canyaCoin
-      }
-    }),
+    CanpayModule,
     ReactiveFormsModule,
     FormlyModule.forRoot({
       validators: [

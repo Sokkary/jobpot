@@ -58,9 +58,18 @@ module.exports = {
       network_id: 3,
       gas: 4600000,
       // gasPrice: 20000000000, // 20 GWei
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(process.env.WALLET_MNEMONIC, `https://ropsten.infura.io/${process.env.INFURA_API_KEY}`)
       }
+    },
+
+    rinkeby: {
+      network_id: 4,
+      gas: 4612388, // Gas limit used for deploys
+      provider: function () {
+        return new HDWalletProvider(process.env.WALLET_MNEMONIC, `https://rinkeby.infura.io/${process.env.INFURA_API_KEY}`)
+      }
+      
     }
   },
   solc: {

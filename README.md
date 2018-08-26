@@ -5,6 +5,20 @@ Simply, any job owner can list a job and specify an initial job pot value as a p
 
 The fees and initial value all will go into the job pot. The jobpot will keep growing until the job owner selects an applicant as a winner (after singing a contract with the candidate). All jobpot value goes to the winning referral whether a recruiter or individual (may be the applicant himself).
 
+## Live Demo
+
+App is hosted here: http://jobpot.io.s3-website-ap-southeast-2.amazonaws.com/
+SmartContract (Rinkeby): 0xe30a73f32e11cd554b013b24f98fa97c523a6b3e
+
+## Documents
+
+All conesnsys documentation requirements are located in the folder `/docs` where we've:
+
+- Design patterns
+- Secuirty and common attacks
+- Library usage
+- Stretch goals
+
 ## Solution
 
 ### Frontend
@@ -23,7 +37,7 @@ Main smart contract is the `JobContract` which resposible for storing job paymen
 
 *Note: Node version is required to be installed
 
-if you run on Linux or MAC, run `./installation.sh` which will automate the insallation process for most of the steps, otherwise follow the following steps one by one.
+if you run on Linux or MAC, run `. installation.sh` which will automate the insallation process for most of the steps, otherwise follow the following steps one by one.
 
 Run `npm i angular-cli -g`
 Run `npm i` from the root project directory
@@ -37,6 +51,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ### Smart Contracts
+
+## Rinkeby Contract Address: 0xe30a73f32e11cd554b013b24f98fa97c523a6b3e
 
 Using truffle framework to run and deploy local blockchain by running
 

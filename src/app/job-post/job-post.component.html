@@ -11,7 +11,7 @@
 
     <!-- <app-loader (loading)="isLoading=$event" [label]="'Loading...'"></app-loader> -->
 
-    <form [formGroup]="form" (ngSubmit)="submit(model)">
+    <form [formGroup]="form" (ngSubmit)="submit()">
       <formly-form [form]="form" [fields]="fields" [model]="model" (submit)="submit()">
         <app-file-uploader (complete)="onFileAdded($event)" [disabled]="!isValidOwner"></app-file-uploader>
 

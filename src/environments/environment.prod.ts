@@ -8,10 +8,13 @@ export const environment = {
     }
   },
   contracts: {
-    useTestNet: false,
-    network: 'mainnet',
-    mainnet: {
-      jobContractAddress: '',
+    useTestNet: true,
+    network: 'rinkeby',
+    local: {
+      jobContractAddress: '0x22ee5da06755048df43cebdcc9fc4c6f60e0f8c2',
+    },
+    rinkeby: {
+      jobContractAddress: '0xe30a73f32e11cd554b013b24f98fa97c523a6b3e',
     }
   }
 };
