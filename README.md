@@ -70,3 +70,8 @@ Using truffle framework to run and deploy local blockchain by running:
 ### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+### Test
+
+- Test cases for the smart contracts are located under `/truffle/test`
+- To run the tests, make sure you're inside `/truffle/test` folder and run `truffle test`
