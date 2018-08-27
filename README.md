@@ -7,6 +7,8 @@ The fees and initial value all will go into the job pot. The jobpot will keep gr
 
 ## Live Demo
 
+This demo is deployed on AWS S3 and ***Rinkeby*** test net so to try it, please switch your MetaMask network to Rinkeby.
+
 - App is hosted here: http://jobpot.io.s3-website-ap-southeast-2.amazonaws.com/
 - SmartContract (Rinkeby): 0xe30a73f32e11cd554b013b24f98fa97c523a6b3e
 
@@ -56,11 +58,12 @@ Using truffle framework to run and deploy local blockchain by running:
 - Start the blockchain by running `ganache-cli`, don't forget to copy the displayed accounts and MNemonics to import these accounts into the MetaMask.
 - `cd truffle` to move into truffle folder.
 - Run `truffle migrate --network local --reset` to deploy the contracts.
+- After migrating the contract, copy the migrated JobContract address (displayed on the console) to `/src/environments/environment.ts` and update the configuration property `jobContractAddress: 'JOBCONTRACT_ADDRESS_SHOULD_BE_HERE'` with the new JobContract address.
 
 ### Frontend (Angular Web App)
 
 - Run `npm i @angular/cli -g`
-- Run `npm i` from the root project directory
+- Run `npm i` from **the root project directory**
 
 ### Development server
 
