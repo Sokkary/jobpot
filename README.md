@@ -3,7 +3,7 @@
 Job pot is a honey pot for any referral who refers a successful CV/Cadidate for a job. 
 Simply, any job owner can list a job and specify an initial job pot value as a prize for successful referral, after that it will be open for individuals and recruiters to submit CVs. However, submitting a CV will require paying the job pot a small fees to make sure that the submitted CV is genuine and eliminate low quality CVs. 
 
-The fees and initial value all will go into the job pot. The jobpot will keep growing until the job owner selects an applicant as a winner (after singing a contract with the candidate). All jobpot value goes to the winning referral whether a recruiter or individual (may be the applicant himself).
+The fees and initial value all will go into the job pot. The jobpot will keep growing until the job owner selects an applicant as a winner (after signing a contract with the candidate). All jobpot value goes to the winning referral whether a recruiter or individual (may be the applicant himself).
 
 ## Live Demo
 

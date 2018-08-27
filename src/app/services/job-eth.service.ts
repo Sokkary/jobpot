@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { environment } from '@environment/environment';
-import { EthService } from '@canyaio/canpay-lib';
 import { OperationFailedAction } from '@app/_state/actions/common.action';
 import { jobContract } from '@app/contracts';
 import { IpfsService } from '@app/services/ipfs.service';
+import { EthService } from '@app/services/eth.service';
 
 const JobStatus = {
   0: 'active',

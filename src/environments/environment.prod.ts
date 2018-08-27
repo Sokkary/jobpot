@@ -1,5 +1,5 @@
 export const environment = {
-  production: true,
+  production: false,
   ethNetId: 1524196056249,
   coinPrices: {
     waitToRefetchInSec: 60,

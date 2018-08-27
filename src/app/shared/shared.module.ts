@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CanpayModule } from '@canyaio/canpay-lib';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -14,7 +13,9 @@ import { AutofocusDirective } from '../directives/autofocus.directive';
 import { LoadingBtnComponent } from './loading-btn/loading-btn.component';
 import { LoaderComponent } from './loader/loader.component';
 import { AppLoaderComponent } from './app-loader/app-loader.component';
-// import { CommaSepNumPipe } from './comma-sep-num.pipe';
+import { MetamaskComponent } from '@app/shared/metamask/metamask.component';
+import { InstructionsComponent } from '@app/shared/metamask/instructions/instructions.component';
+import { FaqComponent } from '@app/shared/metamask/faq/faq.component';
 
 const COMPONENTS = [
   HeaderComponent,
@@ -25,17 +26,11 @@ const COMPONENTS = [
   AutofocusDirective,
   LoadingBtnComponent,
   LoaderComponent,
-  AppLoaderComponent
+  AppLoaderComponent,
+  MetamaskComponent,
+  InstructionsComponent,
+  FaqComponent
 ];
-
-// Factory Function
-export function canPayFactory() {
-  return {
-    contracts: {
-      useTestNet: true
-    }
-  };
-}
 
 @NgModule({
   imports: [
@@ -43,13 +38,6 @@ export function canPayFactory() {
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    CanpayModule
-  ],
-  providers: [
-    {
-      provide: 'Config',
-      useFactory: canPayFactory
-    }
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

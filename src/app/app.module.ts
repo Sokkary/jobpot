@@ -50,6 +50,7 @@ import { JobApplicationsListComponent } from './job-applications-list/job-applic
 import { FileUploaderComponent } from './shared/file-uploader/file-uploader.component';
 import { environment } from '@environment/environment';
 import { JobEthService } from '@app/services/job-eth.service';
+import { EthService } from '@app/services/eth.service';
 
 @NgModule({
   imports: [
@@ -106,6 +107,7 @@ import { JobEthService } from '@app/services/job-eth.service';
   providers: [
     AlertService,
     IpfsService,
+    EthService,
     JobEthService,
   ],
   bootstrap: [AppComponent]

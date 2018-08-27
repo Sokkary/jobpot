@@ -24,7 +24,6 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-    "@canyaio/canpay-lib": "^0.1.5",
     "@ngrx/effects": "^5.2.0",
     "@ngrx/store": "^5.2.0",
     "@ngx-formly/bootstrap": "^2.1.1",
