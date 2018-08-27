@@ -28,17 +28,28 @@ const COMPONENTS = [
   AppLoaderComponent
 ];
 
+// Factory Function
+export function canPayFactory() {
+  return {
+    contracts: {
+      useTestNet: true
+    }
+  };
+}
+
 @NgModule({
   imports: [
     RouterModule,
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    CanpayModule.forRoot({
-      contracts: {
-        useTestNet: true
-      }
-    }),
+    CanpayModule
+  ],
+  providers: [
+    {
+      provide: 'Config',
+      useFactory: canPayFactory
+    }
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS
