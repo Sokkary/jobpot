@@ -21,7 +21,7 @@ export class JobEthService extends EthService {
     private store: Store<any>,
     private ipfs: IpfsService
   ) {
-    super({ useTestNet: environment.contracts.useTestNet }, null);
+    super();
     this.initContract();
   }
 
@@ -71,6 +71,10 @@ export class JobEthService extends EthService {
   }
 
   getEthJobs(status = 'active') {
+    if (!this.jobContract) {
+      return Promise.resolve([]);
+    }
+
     return this.jobContract.methods.getJobsCount()
       .call()
       .then(count => {
@@ -84,8 +88,7 @@ export class JobEthService extends EthService {
 
         return Promise.all(jobs);
         // .then(jobsList => jobsList.filter(record => record[] === true));
-      })
-      .catch(this.handleError.bind(this));
+      });
   }
 
   isValidAddress(address = this.getOwnerAccount()) {

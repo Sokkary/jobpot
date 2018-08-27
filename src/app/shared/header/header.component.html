@@ -1,33 +1,41 @@
 <!-- Topbar -->
 <nav class="topbar topbar-expand-sm topbar-sticky" id="section-top">
   <div class="container">
+      <div class="topbar-left">
+        <button class="topbar-toggler text-gray">&#9776;</button>
+        <a class="topbar-brand" [routerLink]="['/home']">
+          <img class="logo-default" src="/assets/img/logo.png" height="40" alt="logo">
+        </a>
 
-    <div class="topbar-left">
-      <button class="topbar-toggler text-gray">&#9776;</button>
-      <a class="topbar-brand" [routerLink]="['/home']">
-        <img class="logo-default" src="/assets/img/logo.png" height="40" alt="logo">
-      </a>
-    </div>
-
-    <div class="topbar-right">
-      <div>Logged-in Account:</div>
-      <small>{{ user.account || 'N/A' }}</small>
-      <div>
-        <a class="btn btn-primary btn-sm" [routerLink]="['/dashboard']">Dashboard</a>
-        <a class="btn btn-primary btn-sm" [routerLink]="['/job-post']">Post a job</a>
+        <small class="logged-in"> | &nbsp; Logged-in Account: {{ user.account || 'N/A' }}</small>
       </div>
-    </div>
-
+  
+      <div class="topbar-right">
+        <div>
+          <a class="btn btn-primary btn-sm" [routerLink]="['/dashboard']">Dashboard</a>
+          <a class="btn btn-primary btn-sm" [routerLink]="['/job-post']">Post a job</a>
+        </div>
+      </div>
   </div>
 </nav>
 <!-- END Topbar -->
 
+
 <!-- Header -->
 <header class="header fadeout pt-90 pb-0" id="section-home">
   <div class="container">
-    <div class="text-center">
-      <div class="alert alert-danger" *ngIf="noMetaMaskError">{{ noMetaMaskError }}</div>
+    <div class="text-center" *ngIf="noMetaMaskError">
+      <div class="alert alert-danger">{{ noMetaMaskError }}</div>
+      <div class="metamask">
+        <canyalib-metamask></canyalib-metamask>
+      </div>        
     </div>
+
+    <h6 class="alert alert-primary text-center mb-1" *ngIf="!noMetaMaskError">
+      It's simple! Just submit/refer a successful candidate for a posted job and win the whhole jobpot,
+      <a href="#">learn more.</a>
+    </h6>
+    
   </div>
 </header>
 <!-- END Header -->

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CanpayModule } from '@canyaio/canpay-lib';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -33,6 +34,11 @@ const COMPONENTS = [
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
+    CanpayModule.forRoot({
+      contracts: {
+        useTestNet: true
+      }
+    }),
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

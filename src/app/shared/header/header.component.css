@@ -1,0 +1,11 @@
+.metamask {
+  text-align: center;
+  margin: 50px 0;
+  border: 1px dotted #b5b9bf;
+  border-style: dashed;
+  padding: 20px;
+}
+
+.logged-in {
+  margin-left: 50px;
+}

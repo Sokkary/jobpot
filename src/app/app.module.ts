@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { CanpayModule } from '@canyaio/canpay-lib';
+// import { CanpayModule } from '@canyaio/canpay-lib';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxUploaderModule } from 'ngx-uploader';
 
@@ -62,7 +62,6 @@ import { JobEthService } from '@app/services/job-eth.service';
     EffectsModule.forRoot([
       CommonEffects,
     ]),
-    CanpayModule,
     ReactiveFormsModule,
     FormlyModule.forRoot({
       validators: [
@@ -87,7 +86,6 @@ import { JobEthService } from '@app/services/job-eth.service';
     }),
     FormlyBootstrapModule,
     SharedModule,
-    CanpayModule
   ],
   declarations: [
     AppComponent,
